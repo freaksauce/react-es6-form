@@ -1,9 +1,8 @@
 @import 'mixins/rem';
-$color-dark-grey: #3d4a5d;
 footer {
   @include rem(font-size, 12px);
-  color: $color-light-grey;
-  background: $color-dark-grey;
+  color: #fff;
+  background: $color-dark;
   text-align: center;
   min-height: 64px;
   line-height: 64px;

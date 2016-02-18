@@ -12,10 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   position: relative;
   border-radius: 50%;
-  background: $color-mid-grey;
+  background: $color-mid;
   height: 162px;
   width: 162px;
   margin: 0 auto 30px;
@@ -31,26 +31,4 @@
   text-align: center;
   width: 170px;
   margin: auto;
-}
-
-.feature-col:nth-child(1) {
-  .feature-icon {
-    background-image: url(/assets/images/icon-build.gif);
-    background-repeat: no-repeat;
-    background-position: 55% 50%;
-  }
-}
-.feature-col:nth-child(2) {
-  .feature-icon {
-    background-image: url(/assets/images/icon-learn.gif);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-}
-.feature-col:nth-child(3) {
-  .feature-icon {
-    background-image: url(/assets/images/icon-measure.gif);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
 }

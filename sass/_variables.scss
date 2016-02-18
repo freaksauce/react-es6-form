@@ -3,3 +3,15 @@ $color-text-main-hover: #666;
 $color-light-grey: #d7dbe5;
 $color-mid-grey: #9aa6b5;
 $color-dark-grey: #3d4a5d;
+
+
+$color-dark: #213b56;
+$color-mid: #01b1a7;
+$color-mid2: #10516D;
+$color-mid-light: #e2e2e2;
+$color-light: #cdebe9;
+
+.btn.primary {
+  background: $color-mid!important;
+  border: none!important;
+}

@@ -32,21 +32,7 @@ export default class Nav extends React.Component {
                         <i className="fa fa-cubes" /> Cube
                       </div>
                     </div>
-
-                    <div className="col-xs-5 desktop-menu">
-                      <div className="row menu">
-                        <div className="col-xs">
-                          <div className="box menu-item"><a href="/features">Features</a></div>
-                        </div>
-                        <div className="col-xs">
-                          <div className="box menu-item"><a href="/pricing">Pricing</a></div>
-                        </div>
-                        <div className="col-xs-5 menu-item">
-                          <div className="box"><a href="/case-studies">Case Studies</a></div>
-                        </div>
-                      </div>
-                    </div>
-
+                    
                     <div className="col-xs-4 account desktop-menu">
                       <div className="box box-container float-right">
                         <a href="/signup" className="btn primary text-center float-right">Sign up</a>

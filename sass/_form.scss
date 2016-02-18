@@ -1,6 +1,6 @@
 .signup-form {
-  background: $color-mid-grey;
-  color: #fff;
+  background: $color-mid-light;
+  color: #000;
   padding: 10px 0 0 0;
   h1 {
     @include rem(font-size, 24px);
@@ -17,7 +17,8 @@
   }
   input, select {
     width: 100%;
-    background: $color-dark-grey;
+    background: #fff;
+    color: #000;
     border: none;
     height: 45px;
     padding: 10px;
@@ -25,7 +26,7 @@
     @include rem(font-size, 14px);
     @include transition(all .5s ease-out);
     &.error {
-      background-color: #903636;
+      border: 1px solid red;
     }
   }
   .row {
@@ -52,7 +53,8 @@
   	position: absolute;
   	left: 0;
   	bottom: 1px;
-    background: $color-dark-grey;
+    background: #fff;
+    color: $color-dark;
   }
   input[type=checkbox] {
     display: none;
@@ -62,9 +64,8 @@
   }
   input[type=checkbox]:checked + label:before {
     content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     font-size: 20px;
-    color: #f3f3f3;
+    color: #000;
     text-align: center;
     line-height: 20px;
   }
@@ -72,11 +73,11 @@
     text-align: center;
     margin-top: 20px;
   }
-  .submitbtn {
+  .submit-btn {
     margin: 20px auto 40px;
     width: 50%;
-    background: #fff;
-    color: $color-dark-grey;
+    background: $color-mid;
+    color: #fff;
   }
 }
 
