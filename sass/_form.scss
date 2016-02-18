@@ -1,0 +1,92 @@
+.signup-form {
+  background: $color-mid-grey;
+  color: #fff;
+  padding: 10px 0 0 0;
+  h1 {
+    @include rem(font-size, 24px);
+    font-weight: 300;
+  }
+  form {
+    max-width: 530px;
+    margin: auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    @include rem(font-size, 14px);
+  }
+  input, select {
+    width: 100%;
+    background: $color-dark-grey;
+    border: none;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 10px;
+    @include rem(font-size, 14px);
+    @include transition(all .5s ease-out);
+    &.error {
+      background-color: #903636;
+    }
+  }
+  .row {
+    padding: 0 20px;
+  }
+
+
+  .checkbox label {
+  	display: inline-block;
+  	cursor: pointer;
+  	position: relative;
+  	padding-left: 25px;
+  	margin-right: 15px;
+  	font-size: 13px;
+  }
+  .checkbox label:before {
+  	content: "";
+  	display: inline-block;
+  	width: 18px;
+  	height: 18px;
+  	margin-right: 10px;
+    line-height: 1;
+    @include rem(font-size, 22px);
+  	position: absolute;
+  	left: 0;
+  	bottom: 1px;
+    background: $color-dark-grey;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  .checkbox label:before {
+    border-radius: 3px;
+  }
+  input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 20px;
+  }
+  .submit-container {
+    text-align: center;
+  }
+  .submitbtn {
+    margin: 20px auto 40px;
+    width: 50%;
+    background: #fff;
+    color: $color-dark-grey;
+  }
+}
+
+@media screen and (min-width: 46em) {
+  .signup-form {
+    padding: 100px 0 0 0;
+    .row {
+      padding: 0;
+    }
+    .submit-btn {
+      margin-bottom: 140px;
+    }
+  }
+}

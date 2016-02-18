@@ -1,0 +1,110 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  height: 68px;
+  z-index: 10;
+  @include box-shadow(0 1px 2px #888);
+
+  .row {
+    height: 68px;
+    @include align-items(center);
+  }
+
+  .logo {
+    width: 89px;
+    height: 28px;
+  }
+
+  .menu {
+    @include display(flex);
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-item {
+    display: inline-block;
+    a {
+      @include rem(font-size, 12px);
+      text-decoration: none;
+    }
+  }
+
+}
+
+.account {
+  .btn.primary {
+    min-width: 105px;
+  }
+  .login {
+    margin-top: 10px;
+    min-width: 0;
+    margin-right: 10px;
+  }
+}
+
+.desktop-menu {
+  display: none;
+}
+.mobile-menu {
+  position: absolute;
+  opacity: 0;
+  top: 68px;
+  right: 15px;
+  padding: 10px 15px;
+  background: $color-dark-grey;
+  @include box-shadow(0 1px 2px #888);
+  @include transition(all .5s ease-out);
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: $color-light-grey;
+    }
+  }
+}
+.mobile-menu-show.mobile-menu {
+  opacity: 1;
+}
+.mobile-menu-trigger {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+@media screen and (min-width: 46em) {
+  .menu {
+    .menu-item {
+      a {
+        @include rem(font-size, 14px);
+      }
+    }
+  }
+  .desktop-menu {
+    display: block;
+  }
+  .mobile-menu-trigger {
+    display: none;
+  }
+  .account {
+    .btn.primary {
+      min-width: 125px;
+    }
+    .login {
+      margin-top: 10px;
+      margin-right: 0;
+      min-width: 70px;
+    }
+  }
+}

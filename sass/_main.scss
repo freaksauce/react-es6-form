@@ -1,0 +1,47 @@
+.main-heading {
+  @include rem(font-size, 24px);
+  font-weight: 300;
+  margin: 43px 0 48px 0;
+}
+
+.feature-heading {
+  @include rem(font-size, 14px);
+  margin: 0 0 25px;
+}
+.feature-icon {
+  position: relative;
+  border-radius: 50%;
+  background: $color-mid-grey;
+  height: 162px;
+  width: 162px;
+  margin: 0 auto 30px;
+}
+.feature-description {
+  @include rem(font-size, 14px);
+  font-weight: 300;
+  text-align: center;
+  width: 170px;
+  margin: auto;
+}
+
+.feature-col:nth-child(1) {
+  .feature-icon {
+    background-image: url(/assets/images/icon-build.gif);
+    background-repeat: no-repeat;
+    background-position: 55% 50%;
+  }
+}
+.feature-col:nth-child(2) {
+  .feature-icon {
+    background-image: url(/assets/images/icon-learn.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+.feature-col:nth-child(3) {
+  .feature-icon {
+    background-image: url(/assets/images/icon-measure.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

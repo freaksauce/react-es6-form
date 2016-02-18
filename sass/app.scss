@@ -1,0 +1,60 @@
+@import 'normalize';
+@import "bourbon/bourbon";
+@import 'mixins/rem';
+@import 'mixins/box-shadow';
+@import 'mixins/border-radius';
+@import '/assets/vendor/flexboxgrid.min.css';
+@import 'variables';
+@import 'nav';
+@import 'buttons';
+@import 'helpers';
+// components
+@import 'hero';
+@import 'main';
+@import 'testimonial';
+@import 'form';
+@import "footer";
+@import "modal";
+
+html {
+  box-sizing: border-box;
+  @include rem-baseline;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $color-text-main;
+  @include rem(font-size, 16px);
+}
+.content {
+  margin: 0 auto 0;
+  max-width: 960px;
+  width: 100%;
+  padding: 10px;
+}
+.cm-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box-container {
+  box-sizing: border-box;
+  @include rem(padding, 10px);
+}
+a {
+  color: $color-text-main;
+  @include transition(all .3s ease-in);
+  &:hover {
+    color: $color-text-main-hover;
+  }
+}
+
+
+@media screen and (min-width: 46em) {
+  .content {
+    margin: 60px auto 0;
+  }
+}

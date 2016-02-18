@@ -1,0 +1,81 @@
+.hero {
+  position: relative;
+  margin-top: 68px;
+  padding: 20px 40px 40px;
+  background: $color-mid-grey url(/assets/images/hero-darkaccent.png) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  overflow: hidden;
+  h1 {
+    @include rem(font-size, 30px);
+    font-weight: 300;
+    margin: 0 0 5px;
+  }
+  p {
+    @include rem(font-size, 14px);
+    margin: 0;
+  }
+  img {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -262px;
+  }
+
+}
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  @include animation(fadeIn ease-in 1);
+  @include animation-fill-mode(forwards);
+  @include animation-duration(1s);
+}
+.fade-in.one {
+  @include animation-delay(400ms);
+}
+
+.fade-in.two {
+  @include animation-delay(1s);
+}
+
+// .fade-in.three {
+//   @include animation-delay(1.8s);
+// }
+
+@include keyframes(fadeIn) {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.slide-up {
+  opacity: 0;
+  margin-bottom: -20px;
+  @include animation(fadeIn ease-in 1, slideUp ease-out 1);
+  @include animation-fill-mode(forwards);
+  @include animation-duration(.8s);
+  @include animation-delay(1.8s);
+}
+
+@include keyframes(slideUp) {
+  from {
+    margin-bottom: -20px;
+  }
+  to {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 46em) {
+  .hero {
+    min-height: 410px;
+    padding: 90px 0 0 0;
+    img {
+      display: block;
+    }
+  }
+}

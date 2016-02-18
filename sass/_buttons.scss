@@ -1,0 +1,25 @@
+.btn {
+  @include rem(font-size, 12px);
+  @include border-radius(5px);
+  display: inline-block;
+  text-decoration: none;
+  color: $color-text-main;
+  text-transform: uppercase;
+  min-width: 90px;
+
+  &.primary {
+    -webkit-box-shadow: 0px 1px 2px #dedede;
+    -moz-box-shadow: 0px 1px 2px #dedede;
+    box-shadow: 0px 1px 2px #dedede;
+    color: #ffffff;
+    background: #4899ff;
+    border: solid #376fb7 1px;
+    padding: 10px 20px 10px 20px;
+    min-width: 125px;
+
+    &:hover {
+      background: #5aa2fc;
+      text-decoration: none;
+    }
+  }
+}

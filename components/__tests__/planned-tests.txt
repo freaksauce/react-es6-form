@@ -1,0 +1,15 @@
+If the test runner had worked:
+
+* Test that the json object is loaded in App.js, not empty and contains the necessary objects needed to build each component
+
+* Test all components render correctly with data supplied
+
+* Test that you cannot submit a form with empty fields using something like:
+
+TestUtils.Simulate.click(this.refs.submit);
+expect(this.refs.fullname.props.className).toEqual("error");
+
+* Test that an individual field shows validation error on blur
+
+TestUtils.Simulate.blur(this.refs.fullname);
+expect(this.refs.fullname.props.className).toEqual("error");
