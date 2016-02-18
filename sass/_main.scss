@@ -9,12 +9,21 @@
   margin: 0 0 25px;
 }
 .feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   position: relative;
   border-radius: 50%;
   background: $color-mid-grey;
   height: 162px;
   width: 162px;
   margin: 0 auto 30px;
+  text-align: center;
+  i {
+    color: #fff;
+    @include rem(font-size, 70px);
+  }
 }
 .feature-description {
   @include rem(font-size, 14px);

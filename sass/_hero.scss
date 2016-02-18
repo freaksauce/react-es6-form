@@ -2,8 +2,8 @@
   position: relative;
   margin-top: 68px;
   padding: 20px 40px 40px;
-  background: $color-mid-grey url(/assets/images/hero-darkaccent.png) no-repeat;
-  background-size: 100% 100%;
+  background: $color-mid-grey url(/assets/img/hero-bg.jpg) no-repeat;
+  background-size: cover;
   color: #fff;
   overflow: hidden;
   h1 {
@@ -15,12 +15,11 @@
     @include rem(font-size, 14px);
     margin: 0;
   }
-  img {
-    display: none;
+  i {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -262px;
+    margin-left: -60px;
+    bottom: 100px;
+    @include rem(font-size, 120px);
   }
 
 }
@@ -39,9 +38,9 @@
   @include animation-delay(1s);
 }
 
-// .fade-in.three {
-//   @include animation-delay(1.8s);
-// }
+.fade-in.three {
+  @include animation-delay(1.8s);
+}
 
 @include keyframes(fadeIn) {
   from {
@@ -74,8 +73,5 @@
   .hero {
     min-height: 410px;
     padding: 90px 0 0 0;
-    img {
-      display: block;
-    }
   }
 }

@@ -2,32 +2,32 @@
   "hero": {
     "heading": "Lorem ipsum dolor sit amet.",
     "description": "Nullam gravida leo vel faucibus egestas. Integer quis dapibus lectus, vitae tristique lectus.",
-    "image": "/assets/images/browser-chrome.png"
+    "icon": "fa fa-paper-plane"
   },
   "mainContent": {
     "heading": "Nam a neque ac risus",
     "features": [
       {
         "heading": "Vel aliquam",
-        "icon": "icon1-classname-here",
+        "icon": "fa fa-bar-chart",
         "description": "Phasellus auctor, augue ac condimentum euismod, leo lectus malesuada eros, eu vulputate lectus."
       },
       {
         "heading": "Nunc lacus nibh",
-        "icon": "icon2-classname-here",
+        "icon": "fa fa-cloud-download",
         "description": "Porttitor id nibh sed, iaculis aliquet felis. Praesent nec augue elit. Nulla sed nulla metus."
       },
       {
         "heading": "Vivamus dictum",
-        "icon": "icon3-classname-here",
+        "icon": "fa fa-map",
         "description": "Morbi tempor tellus non velit lobortis, in consectetur felis iaculis."
       }
     ]
   },
   "testimonial": {
-    "photo": "/assets/images/a-photo.jpg",
+    "photo": "/assets/img/profilePhoto.jpg",
     "quote": "In hac habitasse platea dictumst. Donec porttitor magna sed lobortis dictum.",
-    "name": "Gravida Justo,",
+    "name": "Gravida Justo",
     "company": "Mauris Eget"
   },
   "footer": {

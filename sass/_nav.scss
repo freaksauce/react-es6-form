@@ -13,8 +13,8 @@
   }
 
   .logo {
-    width: 89px;
-    height: 28px;
+    @include rem(font-size, 30px);
+    color: #000;
   }
 
   .menu {

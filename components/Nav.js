@@ -28,10 +28,8 @@ export default class Nav extends React.Component {
                   <div className="row between-xs">
 
                     <div className="col-xs-3">
-                      <div className="box box-container">
-                        <a href="#" className="brand">
-                          <img className="logo" src="assets/images/logo-pipeline.gif" alt="Pipeline"/>
-                        </a>
+                      <div className="box box-container logo">
+                        <i className="fa fa-cubes" /> Cube
                       </div>
                     </div>
 

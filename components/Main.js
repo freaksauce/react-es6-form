@@ -15,7 +15,7 @@ export default class Main extends React.Component {
         <div className="feature-col col-xs" key={"feature"+i}>
           <div className="feature box">
             <div className="feature-heading text-center">{item.heading}</div>
-            <div className="feature-icon"></div>
+            <div className="feature-icon"><i className={item.icon}></i></div>
             <div className="feature-description">{item.description}</div>
           </div>
         </div>
